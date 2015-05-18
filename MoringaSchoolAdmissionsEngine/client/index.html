@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moringa School Admissions Email Editor</title>
+  <link rel="stylesheet" href="./js/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <nav>
+     <div class="nav-wrapper">
+        <ul class="left">
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown">Documents<i class="mdi-navigation-menu left"></i></a></li>
+        </ul>
+        <ul>
+          <li><img id="logo" src="./assets/moringa_small_logo_white.png"></li>
+        </ul>
+        <ul class="right">
+          <li><a class='mdguide' target="_blank" href="https://help.github.com/articles/markdown-basics/">Markdown Editing Guide<i class="mdi-editor-mode-edit left"></i></a></li>
+          <li><a class='saveToDB'><i class="mdi-action-backup left"></i>Save To Database</a></li>
+        </ul>
+     </div>
+   </nav>
+   <div class="progress">
+       <div class="indeterminate"></div>
+   </div>
+  <div id="in">
+    <form>
+      <textarea id="code">
+      </textarea>
+    </form>
+  </div>
+  <div id="out">
+  </div>
+  <ul id='dropdown' class='dropdown-content'>
+   <li><a href="#!" class='FTA'><i class="mdi-action-description left"></i>Full Time Email A</a></li>
+   <li><a href="#!" class='FTB'><i class="mdi-action-description left"></i>Full Time Email B</a></li>
+   <li><a href="#!" class='PTA'><i class="mdi-action-description left"></i>Part Time Email A</a></li>
+   <li><a href="#!" class='PTB'><i class="mdi-action-description left"></i>Part Time Email B</a></li>
+  </ul>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+  <script src="./js/marked.js"></script>
+  <script src="./js/highlight.pack.js"></script>
+  <script src="./js/codemirror/lib/codemirror.js"></script>
+  <script src="./js/codemirror/xml/xml.js"></script>
+  <script src="./js/codemirror/markdown/markdown.js"></script>
+  <script src="./js/codemirror/gfm/gfm.js"></script>
+  <script src="./js/codemirror/javascript/javascript.js"></script>
+  <script src="./js/rawinflate.js"></script>
+  <script src="./js/rawdeflate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script src="./js/output.js"></script>
+  <script src="./bower_components/socket.io-client/socket.io.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

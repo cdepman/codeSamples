@@ -1,0 +1,9 @@
+# Client
+client/lib
+
+# Server
+node_modules
+
+# Misc
+.DS_Store
+*/.DS_Store
