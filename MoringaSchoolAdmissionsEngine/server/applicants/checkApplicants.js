@@ -1,4 +1,4 @@
-var wufoo = require('./wufoo/wufoo');
+var wufoo = require('../wufoo/wufoo');
 var createApplicant = require('./createApplicant');
 
 var checkNew = function() {

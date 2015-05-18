@@ -1,5 +1,5 @@
 var Firebase = require('firebase');
-var fireBaseConfig = require('../config').firebase;
+var fireBaseConfig = require('../../config').firebase;
 var Promise = require('bluebird');
 
 var emailContentDB = new Firebase(fireBaseConfig.dbAddress);

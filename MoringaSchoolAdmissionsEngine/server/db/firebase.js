@@ -1,5 +1,5 @@
 var Firebase = require('firebase'); 
-var fireBaseConfig = require('../config.js').firebase;
+var fireBaseConfig = require('../../config.js').firebase;
 
 // set database
 var emailStore = exports.db = new Firebase(fireBaseConfig.dbAddress);

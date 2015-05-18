@@ -12,19 +12,25 @@ The Python server is set up to recieve an object that, once parsed by JSON, foll
 
 The python server is instantiated using ZeroRPC and the server's RPC class exposes the methods hello() and cruch() to Node. A new RWaveAnalyzer is instantiated with user-defined parameters.
 
-The R-Wave analyzer is currently bare-bones and calculates BPM and checks for signs of arrhythmia. Many more features can be built in. Below is a rundown of user-defined parameters that are passed into RWaveAnalyzer:
+The R-Wave analyzer is currently checks for signs of arrhythmia and calculates BPM . Many more features can be built in. Below is a rundown of user-defined parameters that are passed into RWaveAnalyzer:
 
 rWaveNotch: 
 A measure of amplitude over which the Analyzer will start recording amplitudes to extract the r-wave peak.
 
-thresholdForFeatureCount: 
-The total number of abnormal RR-interval features found within the RWaveBuffer that would indicate an arrhythmia.
+timespanShort: 
+Seconds, or below, in between r-wave peaks that would indicate abnormality 
 
-timeSpan: 
-Duration of RR-interval that constitutes normal sinus rythm, anything outside of appropriate rande indicates abnormal interval.
+timespanLong:
+Seconds, or above, in between r-wave peaks that would indicate abnormality 
 
-bufferLength: 
-The number of R-waves to store and check against thresholdForFeatureCount
+minFeatures:
+Min number of features in buffer that would indicate abnormality
+
+bufferLength:
+Number of records to check for features
+
+minDistance:
+Minimum millisecond distance between r-wave peaks, to help filter out noise
 
 After RWaveAnalyzer is initialized, the following processes occur as data comes in:
 

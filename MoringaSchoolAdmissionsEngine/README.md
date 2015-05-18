@@ -1,19 +1,19 @@
 **Moringa School Admissions Email Automator**
 
-***checkApplicants.js***
-Main file. Reads entries from wufoo API.
+***/applicants:***
+Periodically reads entries from wufoo API (checkApplicants.js), then delegates tasks (createApplicant.js) for creating new applicants entries based on Wufoo data.
 
-***createApplicant.js***
-Delegates tasks for creating new applicant entries.
+***/emailContent:***
+Fetches email content from Firebase to send to new applicant
 
-***/emailContent***
-Fetches email contect from Firebase
+***/mailer:***
+Sends emails to new applicants through Gmail
 
-***/mailer***
-Sends emails to new applicants
+***/spreadsheets:***
+Updates applicant entries on Google spreadsheets through Google Spreadsheets API
 
-***/spreadsheets***
-Updates entries on Google spreadsheets through Google Spreadsheets API
+***/socketConnection:***
+Sets up socket listeners for actions from client (email template editor) interacting with Firebase
 
-***/socketConnection***
-Sets up socket listeners for actions from client
+***/db:***
+Sets up database connections, methods and models

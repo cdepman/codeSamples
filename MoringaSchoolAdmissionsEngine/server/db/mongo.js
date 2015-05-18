@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var config = require('../config').mongo;
+var config = require('../../config').mongo;
 var Schema = mongoose.Schema;
 var _ = require('lodash');
 var Promise = require('bluebird');

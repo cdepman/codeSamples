@@ -1,5 +1,5 @@
 var https = require('https');
-var config = require('../config').wufoo;
+var config = require('../../config').wufoo;
 
 var headers = {
   'Authorization': 'Basic ' + new Buffer(config.wufoo_key + ':' + config.wufoo_password).toString('base64')

@@ -1,8 +1,8 @@
-var mailer = require('./mailer/mailer');
-var emailContent = require('./emailContent/content');
-var mongo = require('./db/mongo');
-var Google = require('./spreadsheets/spreadsheets');
-var sheets = require('./config').sheets;
+var mailer = require('../mailer/mailer');
+var emailContent = require('../emailContent/content');
+var mongo = require('../db/mongo');
+var Google = require('../spreadsheets/spreadsheets');
+var sheets = require('../../config').sheets;
 var _ = require('lodash');
 
 var createNew = exports = function(applicant) {

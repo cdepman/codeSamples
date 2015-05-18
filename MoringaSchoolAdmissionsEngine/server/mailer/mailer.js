@@ -1,8 +1,9 @@
 var nodemailer = require('nodemailer');
-var config = require('../config').mail;
+var config = require('../../config').mail;
 var util = require('util');
 var Promise = require('bluebird');
 
+// setup Gmail service
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {

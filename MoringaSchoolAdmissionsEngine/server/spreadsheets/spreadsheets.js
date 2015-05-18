@@ -1,5 +1,5 @@
 var Spreadsheet = require('edit-google-spreadsheet');
-var config = require('../config').mail;
+var config = require('../../config').mail;
 
 
 var GoogleDoc = function() {

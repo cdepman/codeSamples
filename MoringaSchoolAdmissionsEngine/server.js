@@ -3,8 +3,8 @@ var app = express();
 var http = require('http').Server(app);
 var port = process.env.PORT || 4000;
 var io = require('socket.io').listen(http);
-var setSocketListeners = require('./socketConnection/socketConnection')(io);
-var checkApplicants = require('./checkApplicants');
+var setSocketListeners = require('server/socketConnection/socketConnection')(io);
+var checkApplicants = require('server/applicants/checkApplicants');
 
 app.use('/', express.static(__dirname + '/client'));
 
